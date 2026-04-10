@@ -11,8 +11,8 @@
   DTS:LocaleID="3072"
   DTS:ObjectName="02_Load_Produit_Structure"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{53DF1036-61FE-44F6-8AFE-F7F0BA2368D4}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{7A483289-6596-4CD4-BA4C-C982900A0F29}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2947,6 +2947,14 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="186,42"
+          Id="Package\DFT_Load_PRODUIT"
+          TopLeft="408,139" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\DFT_Load_STRUCTURE"
+          TopLeft="410,353" />
+        <NodeLayout
           Size="206,42"
           Id="Package\SQL_Truncate_PRODUIT"
           TopLeft="403,33" />
@@ -2954,14 +2962,6 @@
           Size="224,42"
           Id="Package\SQL_Truncate_STRUCTURE"
           TopLeft="401,245" />
-        <NodeLayout
-          Size="205,42"
-          Id="Package\DFT_Load_STRUCTURE"
-          TopLeft="410,353" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\DFT_Load_PRODUIT"
-          TopLeft="408,139" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="503.5,75">
@@ -3044,70 +3044,6 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT_Load_STRUCTURE">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="144,42"
-          Id="Package\DFT_Load_STRUCTURE\Excel Source"
-          TopLeft="419,60" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\DFT_Load_STRUCTURE\OLE DB Destination"
-          TopLeft="414,339" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\DFT_Load_STRUCTURE\Data Conversion"
-          TopLeft="415,204" />
-        <EdgeLayout
-          Id="Package\DFT_Load_STRUCTURE.Paths[Excel Source Output]"
-          TopLeft="493.25,102">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,102"
-              Start="0,0"
-              End="0,94.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Load_STRUCTURE.Paths[Data Conversion Output]"
-          TopLeft="499,246">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,93"
-              Start="0,0"
-              End="0,85.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,85.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\DFT_Load_PRODUIT">
     <LayoutInfo>
       <GraphLayout
@@ -3172,19 +3108,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PRODUIT\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DFT_Load_PRODUIT\OLE DB Destination">
     <Properties>
       <Property>
@@ -3197,6 +3120,83 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_Load_PRODUIT\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\DFT_Load_STRUCTURE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\DFT_Load_STRUCTURE\Excel Source"
+          TopLeft="419,60" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\DFT_Load_STRUCTURE\OLE DB Destination"
+          TopLeft="414,339" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\DFT_Load_STRUCTURE\Data Conversion"
+          TopLeft="415,204" />
+        <EdgeLayout
+          Id="Package\DFT_Load_STRUCTURE.Paths[Excel Source Output]"
+          TopLeft="493.25,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,102"
+              Start="0,0"
+              End="0,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Load_STRUCTURE.Paths[Data Conversion Output]"
+          TopLeft="499,246">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,93"
+              Start="0,0"
+              End="0,85.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\DFT_Load_STRUCTURE\Excel Source">
     <Properties>

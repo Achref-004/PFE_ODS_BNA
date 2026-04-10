@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ACHREF</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG/X3vjt+SEmi+CNTex5QQwAAAAACAAAAAAAQZgAAAAEAACAAAAByupGpL/ZnBNaRYhf2PIvgR8dxdJQv5B9TLSzfV9KhkAAAAAAOgAAAAAIAACAAAAA/cZEmOWuEdKs0Y0PziRW0uRRhHeJYi6aluLVoavPchJAAAACNuSvps4H9N6ZrxmbcWxp2XS+GgYdEw8P/XKTKLuBUshTDqNU/c8y14ZtKGtImxhdgMqpE89C74TGDVSXUgGSO/fwr85G6EiyAlba7FSORH4OggtXC7zMJ8o21RNFAJ3pKskfLnXPLopZ993SAWW6lmR/XQmX2AQO7S2dJItExsX25gFUfE1kagR3vQeLCmRxAAAAAXCGKS8OdofO53QfdCJndvRQhAUJew/5PISusC3uZa0aSnIH6q9h6e7W6v44YJ8FFNHLum7klG5aaH6M1wiJnKA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAG/X3vjt+SEmi+CNTex5QQwAAAAACAAAAAAAQZgAAAAEAACAAAAD0Mc6F8by4ZMKH8mwE42SMXaTgSDqtrAEl/geZ9hODnAAAAAAOgAAAAAIAACAAAACwzhztqOESdlx3gz7gvmeMBES0oAPtbqUMXZgZgrMDJ5AAAACYmHGXSV6hdwGE0stmjJjKNmhJZ2w4e0e2lRRPey5Yd49gNPaOP+F7pPLzANwYHVjlM6IlPGoCf7rZ1Mby/DRkaSKZGsOuu2omVex3K3rhwRZh6+XC6glgNQbSjyHyTEoU204+wqhUXAzQ6h3DMl+54MuvKocjVkk3vKQMjfZx+lVnq0arKywBYZrox1+QmP1AAAAAtYt+pq1I+2pFfoUJyX7hO9tbgGZ54zXPHuNrjYAj7iZw9n2DsalDe/Zgsk09IudHSOrMu1OUTUipVpJkIFJskQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -1663,7 +1663,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost\SQLEXPRESS;Initial Catalog=ODS_BNA_Placements;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{30CAF8B3-21C2-41E0-9F10-6D29E5430AD6}localhost\SQLEXPRESS.ODS_BNA_Placements;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=ODS_BNA_Placements;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{30CAF8B3-21C2-41E0-9F10-6D29E5430AD6}localhost\SQLEXPRESS.ODS_BNA_Placements;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -1767,7 +1767,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">localhost\SQLEXPRESS</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -1793,10 +1793,10 @@
                 <SSIS:Property SSIS:Name="Name">01_Load_References</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">26</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">27</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9D118903-1B75-4768-ADC7-73D5B8D64C2E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{DFB1894E-7DC3-4A7A-A62D-F27ED6482485}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1810,10 +1810,10 @@
                 <SSIS:Property SSIS:Name="Name">02_Load_Produit_Structure</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{53DF1036-61FE-44F6-8AFE-F7F0BA2368D4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7A483289-6596-4CD4-BA4C-C982900A0F29}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
