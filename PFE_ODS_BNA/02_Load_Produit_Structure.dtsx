@@ -11,8 +11,9 @@
   DTS:LocaleID="3072"
   DTS:ObjectName="02_Load_Produit_Structure"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{7A483289-6596-4CD4-BA4C-C982900A0F29}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{BC1EFF92-FC73-4089-A47B-082C0BBAEB6E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />

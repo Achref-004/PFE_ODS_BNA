@@ -11,10 +11,53 @@
   DTS:LocaleID="3072"
   DTS:ObjectName="Master"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{F84D1F8F-647A-479B-888F-D8D2E5029FCF}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{813B538A-3193-478F-A510-F06AA06F3233}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[01_Load_References.dtsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{36B1A950-DBA1-4E6C-B0E6-6B6A3DC52EC4}"
+      DTS:ObjectName="01_Load_References.dtsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\bejao\source\repos\PFE_ODS_BNA\PFE_ODS_BNA\01_Load_References.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[02_Load_Produit_Structure.dtsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{BCFB2F36-BE1C-4709-BFEA-FE55EAC0E277}"
+      DTS:ObjectName="02_Load_Produit_Structure.dtsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\bejao\source\repos\PFE_ODS_BNA\PFE_ODS_BNA\02_Load_Produit_Structure.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[03_Load_Placement.dtsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D3082CFE-6413-40E7-A843-0DE2011A092B}"
+      DTS:ObjectName="03_Load_Placement.dtsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\bejao\source\repos\PFE_ODS_BNA\PFE_ODS_BNA\03_Load_Placement.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[04_Load_Objectifs.dtsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6695F4FC-AC0E-446D-8417-1B28AE1EB59A}"
+      DTS:ObjectName="04_Load_Objectifs.dtsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\bejao\source\repos\PFE_ODS_BNA\PFE_ODS_BNA\04_Load_Objectifs.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable

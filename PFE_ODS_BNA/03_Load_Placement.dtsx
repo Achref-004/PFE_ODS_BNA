@@ -11,8 +11,9 @@
   DTS:LocaleID="3072"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{044231DA-D96B-40A1-97E3-DB6CA7A0323A}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{3A5FBEBC-AE32-48C6-9252-03D8B5AF8E3B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -3350,6 +3351,19 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\DFT_Load_PLACEMENT\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\DFT_Load_PLACEMENT\SRC_plc_devise_2025">
     <Properties>
       <Property>
@@ -3363,7 +3377,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PLACEMENT\SRC_plc_dinars_2025">
+    design-time-name="Package\DFT_Load_PLACEMENT\SRC_plc_dinars_2026">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3389,20 +3403,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PLACEMENT\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PLACEMENT\SRC_plc_dinars_2026">
+    design-time-name="Package\DFT_Load_PLACEMENT\SRC_plc_dinars_2025">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
