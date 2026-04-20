@@ -5,6 +5,7 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ACHREF"
   DTS:CreatorName="ACHREF\bejao"
+  DTS:DelayValidation="True"
   DTS:DTSID="{8CBDD62D-B922-498D-BAE7-E533FF993920}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="17.0.1010.2"
@@ -12,8 +13,8 @@
   DTS:ObjectName="Master"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{813B538A-3193-478F-A510-F06AA06F3233}">
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{58E3DD45-D224-47D2-BD63-A61B0C43552E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -63,6 +64,7 @@
     <DTS:Executable
       DTS:refId="Package\EXEC_01_Load_References"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{F7D14674-BAE1-44C4-84F3-F13B068A5CE4}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
@@ -80,6 +82,7 @@
     <DTS:Executable
       DTS:refId="Package\EXEC_02_Load_Produit_Structure"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{F04E5635-FCDD-47BF-95CA-8ECA5C833BB4}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
@@ -97,6 +100,7 @@
     <DTS:Executable
       DTS:refId="Package\EXEC_03_Load_Placement"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{93364C0D-6AD8-4D12-9065-23D9A45E3629}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
@@ -114,6 +118,7 @@
     <DTS:Executable
       DTS:refId="Package\EXEC_04_Load_Objectifs"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{872F2D37-9775-467C-9A6F-43C7E2945C14}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"

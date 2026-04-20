@@ -5,6 +5,7 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ACHREF"
   DTS:CreatorName="ACHREF\bejao"
+  DTS:DelayValidation="True"
   DTS:DTSID="{95B695D2-5180-4951-8743-247924E17A8F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="17.0.1010.2"
@@ -12,8 +13,8 @@
   DTS:ObjectName="02_Load_Produit_Structure"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{BC1EFF92-FC73-4089-A47B-082C0BBAEB6E}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{D1654FD7-DA19-42E9-86B8-1C978E78EB41}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,6 +22,7 @@
     <DTS:Executable
       DTS:refId="Package\DFT_Load_PRODUIT"
       DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{50D6E5F0-455D-4802-924D-55F49D290E97}"
       DTS:ExecutableType="Microsoft.Pipeline"
@@ -33,143 +35,143 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT_Load_PRODUIT\Data Conversion"
+              refId="Package\DFT_Load_PRODUIT\changer les types des colones"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
-              name="Data Conversion"
+              name="changer les types des colones"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input]"
+                  refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input]"
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_FAM_FAM]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_FAM_FAM"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_FAM_FAM]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_FAM_FAM]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_SFAM_SFP]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_SFAM_SFP"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_GFAM_GP]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_GFAM_GP"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_GFAM_GP]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_GFAM_GP]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_UNIQ_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_UNIQ_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[NUM_SMAX_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="NUM_SMAX_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[NUM_SMIN_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="NUM_SMIN_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_ANC_BNA]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_ANC_BNA"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_ANC_BNA]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_ANC_BNA]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_COR_BCT]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_COR_BCT"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_COR_BCT]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_COR_BCT]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_TPRD_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_TPRD_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[VALID_PRD_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="VALID_PRD_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_RAT_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_RAT_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_RAT_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_RAT_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[MOD_REMB_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="MOD_REMB_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[DUR_MAX_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="DUR_MAX_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[DUR_MIN_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="DUR_MIN_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_SPEC_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="COD_SPEC_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[BOOL_DECH_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="BOOL_DECH_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[DAT_MAJ]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="DAT_MAJ"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DAT_MAJ]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DAT_MAJ]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input].Columns[COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input].Columns[COD_PRD_PRD]"
                       cachedDataType="r8"
                       cachedName="COD_PRD_PRD"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_PRD_PRD]" />
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_PRD_PRD]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output]"
+                  refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output]"
                   exclusionGroup="1"
                   name="Data Conversion Output"
-                  synchronousInputId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]"
                       name="Copy of COD_FAM_FAM"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -177,7 +179,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_FAM_FAM]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_FAM_FAM]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -185,13 +187,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]"
                       name="Copy of COD_SFAM_SFP"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -199,7 +201,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -207,13 +209,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]"
                       name="Copy of COD_GFAM_GP"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -221,7 +223,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_GFAM_GP]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_GFAM_GP]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -229,13 +231,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]"
                       name="Copy of COD_UNIQ_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -243,7 +245,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -251,13 +253,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]"
                       name="Copy of NUM_SMAX_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -265,7 +267,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -273,13 +275,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]"
                       name="Copy of NUM_SMIN_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -287,7 +289,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -295,13 +297,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]"
                       name="Copy of COD_ANC_BNA"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -309,7 +311,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_ANC_BNA]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_ANC_BNA]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -317,13 +319,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]"
                       name="Copy of COD_COR_BCT"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -331,7 +333,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_COR_BCT]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_COR_BCT]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -339,13 +341,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]"
                       name="Copy of COD_TPRD_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -353,7 +355,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -361,13 +363,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]"
                       name="Copy of VALID_PRD_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -375,7 +377,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -383,13 +385,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]"
                       name="Copy of COD_RAT_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -397,7 +399,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_RAT_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_RAT_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -405,13 +407,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]"
                       name="Copy of MOD_REMB_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -419,7 +421,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -427,13 +429,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]"
                       name="Copy of DUR_MAX_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -441,7 +443,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -449,13 +451,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="50"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]"
                       name="Copy of DUR_MIN_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -463,7 +465,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -471,13 +473,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]"
                       name="Copy of COD_SPEC_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -485,7 +487,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -493,13 +495,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="10"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]"
                       name="Copy of BOOL_DECH_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -507,7 +509,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -515,13 +517,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       length="20"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]"
                       name="Copy of DAT_MAJ"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -529,7 +531,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DAT_MAJ]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DAT_MAJ]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -537,11 +539,11 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]"
                       name="Copy of COD_PRD_PRD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -549,7 +551,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_PRD_PRD]}</property>
+                          name="SourceInputColumnLineageID">#{Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_PRD_PRD]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -560,22 +562,22 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Error Output]"
+                  refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Data Conversion Error Output"
-                  synchronousInputId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input]">
+                  synchronousInputId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -584,11 +586,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Load_PRODUIT\Excel Source"
+              refId="Package\DFT_Load_PRODUIT\Excel produit"
               componentClassID="Microsoft.ExcelSource"
               contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Excel Source"
-              name="Excel Source"
+              name="Excel produit"
               usesDispositions="true"
               version="1">
               <properties>
@@ -625,7 +627,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_PRODUIT\Excel Source.Connections[OleDbConnection]"
+                  refId="Package\DFT_Load_PRODUIT\Excel produit.Connections[OleDbConnection]"
                   connectionManagerID="{E7278BB0-6C0D-43D6-B69E-E657D289E5AF}:external"
                   connectionManagerRefId="Project.ConnectionManagers[CONN_PRODUIT]"
                   description="The OLE DB runtime connection used to access the database."
@@ -633,446 +635,446 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output]"
+                  refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output]"
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_PRD_PRD]"
                       dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_PRD_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_PRD_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_PRD_PRD]"
                       name="COD_PRD_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[LIB_PRD_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[LIB_PRD_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]"
                       name="LIB_PRD_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_FAM_FAM]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_FAM_FAM]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_FAM_FAM]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_FAM_FAM]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_FAM_FAM]"
                       name="COD_FAM_FAM"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SFAM_SFP]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_SFAM_SFP]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SFAM_SFP]"
                       name="COD_SFAM_SFP"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_GFAM_GP]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_GFAM_GP]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_GFAM_GP]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_GFAM_GP]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_GFAM_GP]"
                       name="COD_GFAM_GP"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[LIB_DESC_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[LIB_DESC_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]"
                       name="LIB_DESC_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_UNIQ_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_UNIQ_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_UNIQ_PRD]"
                       name="COD_UNIQ_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[NUM_SMIN_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[NUM_SMIN_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMIN_PRD]"
                       name="NUM_SMIN_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[NUM_SMAX_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[NUM_SMAX_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[NUM_SMAX_PRD]"
                       name="NUM_SMAX_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_ANC_BNA]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_ANC_BNA]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_ANC_BNA]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_ANC_BNA]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_ANC_BNA]"
                       name="COD_ANC_BNA"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_COR_BCT]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_COR_BCT]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_COR_BCT]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_COR_BCT]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_COR_BCT]"
                       name="COD_COR_BCT"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_TPRD_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_TPRD_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_TPRD_PRD]"
                       name="COD_TPRD_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[VALID_PRD_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[VALID_PRD_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[VALID_PRD_PRD]"
                       name="VALID_PRD_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_RAT_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_RAT_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_RAT_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_RAT_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_RAT_PRD]"
                       name="COD_RAT_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[MOD_REMB_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[MOD_REMB_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[MOD_REMB_PRD]"
                       name="MOD_REMB_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DUR_MAX_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DUR_MAX_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MAX_PRD]"
                       name="DUR_MAX_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DUR_MIN_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DUR_MIN_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DUR_MIN_PRD]"
                       name="DUR_MIN_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SPEC_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_SPEC_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[COD_SPEC_PRD]"
                       name="COD_SPEC_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[BOOL_DECH_PRD]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[BOOL_DECH_PRD]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[BOOL_DECH_PRD]"
                       name="BOOL_DECH_PRD"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DAT_MAJ]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DAT_MAJ]"
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DAT_MAJ]"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[DAT_MAJ]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[DAT_MAJ]"
                       name="DAT_MAJ"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_PRD_PRD]"
                       dataType="r8"
                       name="COD_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[LIB_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[LIB_PRD_PRD]"
                       dataType="wstr"
                       length="255"
                       name="LIB_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_FAM_FAM]"
                       dataType="wstr"
                       length="255"
                       name="COD_FAM_FAM" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_SFAM_SFP]"
                       dataType="wstr"
                       length="255"
                       name="COD_SFAM_SFP" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_GFAM_GP]"
                       dataType="wstr"
                       length="255"
                       name="COD_GFAM_GP" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[LIB_DESC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[LIB_DESC_PRD]"
                       dataType="wstr"
                       length="255"
                       name="LIB_DESC_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_UNIQ_PRD]"
                       dataType="wstr"
                       length="255"
                       name="COD_UNIQ_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[NUM_SMIN_PRD]"
                       dataType="wstr"
                       length="255"
                       name="NUM_SMIN_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[NUM_SMAX_PRD]"
                       dataType="wstr"
                       length="255"
                       name="NUM_SMAX_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_ANC_BNA]"
                       dataType="wstr"
                       length="255"
                       name="COD_ANC_BNA" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_COR_BCT]"
                       dataType="wstr"
                       length="255"
                       name="COD_COR_BCT" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_TPRD_PRD]"
                       dataType="wstr"
                       length="255"
                       name="COD_TPRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[VALID_PRD_PRD]"
                       dataType="wstr"
                       length="255"
                       name="VALID_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_RAT_PRD]"
                       dataType="wstr"
                       length="255"
                       name="COD_RAT_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[MOD_REMB_PRD]"
                       dataType="wstr"
                       length="255"
                       name="MOD_REMB_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DUR_MAX_PRD]"
                       dataType="wstr"
                       length="255"
                       name="DUR_MAX_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DUR_MIN_PRD]"
                       dataType="wstr"
                       length="255"
                       name="DUR_MIN_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[COD_SPEC_PRD]"
                       dataType="wstr"
                       length="255"
                       name="COD_SPEC_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[BOOL_DECH_PRD]"
                       dataType="wstr"
                       length="255"
                       name="BOOL_DECH_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].ExternalColumns[DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].ExternalColumns[DAT_MAJ]"
                       dataType="wstr"
                       length="255"
                       name="DAT_MAJ" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output]"
+                  refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output]"
                   isErrorOut="true"
                   name="Excel Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_PRD_PRD]"
                       dataType="r8"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_PRD_PRD]"
                       name="COD_PRD_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[LIB_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[LIB_PRD_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[LIB_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[LIB_PRD_PRD]"
                       name="LIB_PRD_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_FAM_FAM]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_FAM_FAM]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_FAM_FAM]"
                       name="COD_FAM_FAM" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_SFAM_SFP]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SFAM_SFP]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_SFAM_SFP]"
                       name="COD_SFAM_SFP" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_GFAM_GP]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_GFAM_GP]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_GFAM_GP]"
                       name="COD_GFAM_GP" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[LIB_DESC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[LIB_DESC_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[LIB_DESC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[LIB_DESC_PRD]"
                       name="LIB_DESC_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_UNIQ_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_UNIQ_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_UNIQ_PRD]"
                       name="COD_UNIQ_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[NUM_SMIN_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[NUM_SMIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[NUM_SMIN_PRD]"
                       name="NUM_SMIN_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[NUM_SMAX_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[NUM_SMAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[NUM_SMAX_PRD]"
                       name="NUM_SMAX_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_ANC_BNA]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_ANC_BNA]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_ANC_BNA]"
                       name="COD_ANC_BNA" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_COR_BCT]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_COR_BCT]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_COR_BCT]"
                       name="COD_COR_BCT" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_TPRD_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_TPRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_TPRD_PRD]"
                       name="COD_TPRD_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[VALID_PRD_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[VALID_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[VALID_PRD_PRD]"
                       name="VALID_PRD_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_RAT_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_RAT_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_RAT_PRD]"
                       name="COD_RAT_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[MOD_REMB_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[MOD_REMB_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[MOD_REMB_PRD]"
                       name="MOD_REMB_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DUR_MAX_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DUR_MAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DUR_MAX_PRD]"
                       name="DUR_MAX_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DUR_MIN_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DUR_MIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DUR_MIN_PRD]"
                       name="DUR_MIN_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_SPEC_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[COD_SPEC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[COD_SPEC_PRD]"
                       name="COD_SPEC_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[BOOL_DECH_PRD]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[BOOL_DECH_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[BOOL_DECH_PRD]"
                       name="BOOL_DECH_PRD" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DAT_MAJ]"
                       dataType="wstr"
                       length="255"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[DAT_MAJ]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[DAT_MAJ]"
                       name="DAT_MAJ" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1081,11 +1083,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Load_PRODUIT\OLE DB Destination"
+              refId="Package\DFT_Load_PRODUIT\table produit"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="table produit"
               usesDispositions="true"
               version="4">
               <properties>
@@ -1138,7 +1140,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\DFT_Load_PRODUIT\table produit.Connections[OleDbConnection]"
                   connectionManagerID="{30CAF8B3-21C2-41E0-9F10-6D29E5430AD6}:external"
                   connectionManagerRefId="Project.ConnectionManagers[CONN_SQL_ODS]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1146,282 +1148,282 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LIB_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[LIB_PRD_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="LIB_PRD_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIB_PRD_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[LIB_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_PRD_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LIB_DESC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[LIB_DESC_PRD]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="LIB_DESC_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIB_DESC_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[LIB_DESC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output].Columns[LIB_DESC_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_FAM_FAM]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of COD_FAM_FAM"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_FAM_FAM]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_FAM_FAM]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_FAM_FAM]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_SFAM_SFP]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of COD_SFAM_SFP"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SFAM_SFP]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_SFAM_SFP]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SFAM_SFP]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_GFAM_GP]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of COD_GFAM_GP"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_GFAM_GP]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_GFAM_GP]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_GFAM_GP]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_UNIQ_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of COD_UNIQ_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_UNIQ_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_UNIQ_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_UNIQ_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of NUM_SMIN_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of NUM_SMIN_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMIN_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMIN_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of NUM_SMAX_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of NUM_SMAX_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMAX_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of NUM_SMAX_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_ANC_BNA]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of COD_ANC_BNA"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_ANC_BNA]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_ANC_BNA]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_ANC_BNA]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_COR_BCT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of COD_COR_BCT"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_COR_BCT]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_COR_BCT]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_COR_BCT]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_TPRD_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of COD_TPRD_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_TPRD_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_TPRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_TPRD_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of VALID_PRD_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of VALID_PRD_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALID_PRD_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[VALID_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of VALID_PRD_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_RAT_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of COD_RAT_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_RAT_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_RAT_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_RAT_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of MOD_REMB_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of MOD_REMB_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOD_REMB_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[MOD_REMB_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of MOD_REMB_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of DUR_MAX_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of DUR_MAX_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MAX_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MAX_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MAX_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of DUR_MIN_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of DUR_MIN_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MIN_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MIN_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DUR_MIN_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_SPEC_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of COD_SPEC_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SPEC_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_SPEC_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_SPEC_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of BOOL_DECH_PRD]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Copy of BOOL_DECH_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BOOL_DECH_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[BOOL_DECH_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of BOOL_DECH_PRD]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of DAT_MAJ]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="Copy of DAT_MAJ"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DAT_MAJ]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DAT_MAJ]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of DAT_MAJ]" />
                     <inputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].Columns[Copy of COD_PRD_PRD]"
                       cachedDataType="i4"
                       cachedName="Copy of COD_PRD_PRD"
-                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_PRD_PRD]"
-                      lineageId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]" />
+                      externalMetadataColumnId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_PRD_PRD]"
+                      lineageId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output].Columns[Copy of COD_PRD_PRD]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_PRD_PRD]"
                       dataType="i4"
                       name="COD_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIB_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[LIB_PRD_PRD]"
                       dataType="wstr"
                       length="500"
                       name="LIB_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_FAM_FAM]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_FAM_FAM]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="COD_FAM_FAM" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SFAM_SFP]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_SFAM_SFP]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="COD_SFAM_SFP" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_GFAM_GP]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_GFAM_GP]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="COD_GFAM_GP" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIB_DESC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[LIB_DESC_PRD]"
                       dataType="nText"
                       name="LIB_DESC_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_UNIQ_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_UNIQ_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="COD_UNIQ_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMIN_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="NUM_SMIN_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[NUM_SMAX_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="NUM_SMAX_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_ANC_BNA]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_ANC_BNA]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="COD_ANC_BNA" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_COR_BCT]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_COR_BCT]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="COD_COR_BCT" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_TPRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_TPRD_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="COD_TPRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALID_PRD_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[VALID_PRD_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="VALID_PRD_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_RAT_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_RAT_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="COD_RAT_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOD_REMB_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[MOD_REMB_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="MOD_REMB_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MAX_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MAX_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="DUR_MAX_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MIN_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DUR_MIN_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="DUR_MIN_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_SPEC_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[COD_SPEC_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="COD_SPEC_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BOOL_DECH_PRD]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[BOOL_DECH_PRD]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="BOOL_DECH_PRD" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DAT_MAJ]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input].ExternalColumns[DAT_MAJ]"
                       codePage="1252"
                       dataType="str"
                       length="20"
@@ -1431,22 +1433,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT_Load_PRODUIT\table produit.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_Load_PRODUIT\table produit.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_PRODUIT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_Load_PRODUIT\table produit.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_PRODUIT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_Load_PRODUIT\table produit.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1458,14 +1460,14 @@
           <paths>
             <path
               refId="Package\DFT_Load_PRODUIT.Paths[Data Conversion Output]"
-              endId="Package\DFT_Load_PRODUIT\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT_Load_PRODUIT\table produit.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
-              startId="Package\DFT_Load_PRODUIT\Data Conversion.Outputs[Data Conversion Output]" />
+              startId="Package\DFT_Load_PRODUIT\changer les types des colones.Outputs[Data Conversion Output]" />
             <path
               refId="Package\DFT_Load_PRODUIT.Paths[Excel Source Output]"
-              endId="Package\DFT_Load_PRODUIT\Data Conversion.Inputs[Data Conversion Input]"
+              endId="Package\DFT_Load_PRODUIT\changer les types des colones.Inputs[Data Conversion Input]"
               name="Excel Source Output"
-              startId="Package\DFT_Load_PRODUIT\Excel Source.Outputs[Excel Source Output]" />
+              startId="Package\DFT_Load_PRODUIT\Excel produit.Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1473,6 +1475,7 @@
     <DTS:Executable
       DTS:refId="Package\DFT_Load_STRUCTURE"
       DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{BE5473F0-7654-44B7-9D7A-59939A07774C}"
       DTS:ExecutableType="Microsoft.Pipeline"
@@ -2877,6 +2880,7 @@
     <DTS:Executable
       DTS:refId="Package\SQL_Truncate_PRODUIT"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{EA4874FB-2E1E-47A5-A3E7-9BC23DF32C81}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -2894,6 +2898,7 @@
     <DTS:Executable
       DTS:refId="Package\SQL_Truncate_STRUCTURE"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{CE6EBEA0-A5E6-40A0-B864-9E500FCA8B55}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
@@ -3050,31 +3055,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,42"
-          Id="Package\DFT_Load_PRODUIT\Excel Source"
-          TopLeft="523,45" />
+          Size="140,42"
+          Id="Package\DFT_Load_PRODUIT\table produit"
+          TopLeft="562,368" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\DFT_Load_PRODUIT\OLE DB Destination"
-          TopLeft="507,371" />
+          Size="143,42"
+          Id="Package\DFT_Load_PRODUIT\Excel produit"
+          TopLeft="556,39" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\DFT_Load_PRODUIT\Data Conversion"
+          Size="227,42"
+          Id="Package\DFT_Load_PRODUIT\changer les types des colones"
           TopLeft="513,210" />
         <EdgeLayout
           Id="Package\DFT_Load_PRODUIT.Paths[Excel Source Output]"
-          TopLeft="594.25,87">
+          TopLeft="627,81">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,123"
+              EndConnector="0,129"
               Start="0,0"
-              End="0,115.5">
+              End="0,121.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,115.5" />
+                    End="0,121.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3085,18 +3090,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DFT_Load_PRODUIT.Paths[Data Conversion Output]"
-          TopLeft="594.5,252">
+          TopLeft="629.25,252">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,119"
+              EndConnector="0,116"
               Start="0,0"
-              End="0,111.5">
+              End="0,108.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,111.5" />
+                    End="0,108.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3109,7 +3114,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PRODUIT\OLE DB Destination">
+    design-time-name="Package\DFT_Load_PRODUIT\table produit">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3122,7 +3127,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_PRODUIT\Excel Source">
+    design-time-name="Package\DFT_Load_PRODUIT\Excel produit">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
